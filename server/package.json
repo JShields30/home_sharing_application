@@ -1,0 +1,7 @@
+{
+  "name": "home_sharing_application",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
