@@ -1,15 +1,14 @@
 {
-    "parser": "@typescript-eslint/parcer",
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+      "ecmaVersion": 2018,
+      "sourceType": "module"
     },
     "extends": ["plugin:@typescript-eslint/recommended"],
-    "env": {
-        "node": true
-    },
+    "env": { "node": true },
     "rules": {
-        "indent":"off",
-        "@typescript-eslint/indent": "off"
+      "indent": "off",
+      "@typescript-eslint/indent": "off",
+      "@typescript-eslint/explicit-function-return-type": "off"
     }
-}
+  }
