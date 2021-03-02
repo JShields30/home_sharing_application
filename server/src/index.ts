@@ -7,11 +7,6 @@ const port = 9000;
 
 app.use(bodyParser.json())
 
-const one = 1;
-const two = 2;
-
-app.get('/', (_req, res) => res.send(`1 + 2 = ${one + two}`));
-
 app.get("/listings", (_req, res) => {
   return res.send(listings);
 });
