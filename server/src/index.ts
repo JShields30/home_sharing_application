@@ -6,10 +6,7 @@ const app = express();
 const port = 9000;
 
 const server = new ApolloServer({ schema });
-
 server.applyMiddleware({ app, path: '/api'});
-
-app.use(bodyParser.json());
 
 app.listen(port);
 

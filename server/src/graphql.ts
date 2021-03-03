@@ -1,11 +1,10 @@
 import { GraphQLObjectType, GraphQLString, GraphQLSchema } from 'graphql';
-import { resolve } from 'path';
 
 const query = new GraphQLObjectType({
   name: "Query",
   fields: {
     hello: {
-      type: GraphQLString
+      type: GraphQLString,
       resolve: () => "Hello from the Query!"
     }
   }
@@ -15,7 +14,7 @@ const mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
     hello: {
-      type: GraphQLString
+      type: GraphQLString,
       resolve: () => "Hello from the Mutation!"
     }
   }
