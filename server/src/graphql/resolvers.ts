@@ -14,7 +14,6 @@ export const resolvers: IResolvers = {
           return listings.splice(i, 1)[0];
         }
       }
-
       throw new Error("Failed to deleted listing");
     }
   }

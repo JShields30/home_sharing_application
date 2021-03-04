@@ -14,7 +14,7 @@ export const typeDefs = gql`
 	}
 
   type Query {
-    listings: [Listings!]!
+    listings: [Listing!]!
   }
 
   type Mutation {
