@@ -4,7 +4,12 @@ dotenv.config();
 import { Listing } from '../listings'
 ​
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_CLUSTER}.mongodb.net/test?retryWrites=true&w=majority`;
-​
+​/**
+ * 
+ mongodb+srv://<username>:<password>@cluster0.ocs2m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+ */
 export const connectDatabase = async () => {
   const client = await MongoClient.connect(url, {
     useNewUrlParser: true,
