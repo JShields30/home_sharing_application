@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import { Database } from "../lib/types";
 import * as dotenv from "dotenv";
 dotenv.config();
 import { Listing } from '../listings'
@@ -10,7 +11,7 @@ const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${p
 
 
  */
-export const connectDatabase = async () => {
+export const connectDatabase = async (): Promise<Database> => {
   const client = await MongoClient.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -18,7 +19,7 @@ export const connectDatabase = async () => {
   const db = client.db("main");
 
   return {
-    listings: db.collection<Listing>("listings_2")
+    listings: db.collection("test_listings")
   };
 };
 
