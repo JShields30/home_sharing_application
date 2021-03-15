@@ -8,8 +8,6 @@ const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${p
 ​/**
  * 
  mongodb+srv://<username>:<password>@cluster0.ocs2m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-
-
  */
 export const connectDatabase = async (): Promise<Database> => {
   const client = await MongoClient.connect(url, {
