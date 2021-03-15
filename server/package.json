@@ -29,6 +29,7 @@
     "dev:debug": "nodemon --config nodemon.json --inspect-brk src/index.ts",
     "start": "ts-node src/index.ts",
     "build": "tsc -p ./",
+    "seed": "ts-node temp/seed.ts",
     "tsconfig:effective": "tsc --showConfig"
   },
   "keywords": [],
