@@ -2,7 +2,6 @@ import { MongoClient } from "mongodb";
 import { Database } from "../lib/types";
 import * as dotenv from "dotenv";
 dotenv.config();
-import { Listing } from '../listings'
 ​
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_CLUSTER}.mongodb.net/test?retryWrites=true&w=majority`;
 ​/**
