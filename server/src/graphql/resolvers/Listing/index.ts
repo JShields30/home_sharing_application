@@ -1,6 +1,6 @@
 import { ObjectId } from 'mongodb';
 import { defaultCreateRemoteResolver, IResolvers } from 'apollo-server-express';
-import { Database, Listing } from '../lib/types';
+import { Database, Listing } from '../../../lib/types';
 
 export const resolvers: IResolvers = {
 	Query: {
